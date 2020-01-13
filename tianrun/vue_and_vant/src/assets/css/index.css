@@ -1,0 +1,607 @@
+@charset "utf-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    /*background: transparent;*/
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+fieldset, img {    border:0;}
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style:normal;
+    font-weight:normal;
+}
+ol, ul { list-style:none; }
+caption, th { text-align:left; }
+h1, h2, h3, h4, h5, h6 {
+    font-size:200%;
+    font-weight:normal;
+}
+:focus { outline: 0;}
+a{ text-decoration:none;}
+a:hover img{ border:none;}
+/*清除浮动*/
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%;}
+.clearfix {display: block;}
+
+a{
+    text-decoration:none;
+    color: #000;
+    
+}
+
+
+
+
+/* 主体样式 */
+
+.flex-container{
+    display: -webkit-flex;
+    flex-direction: column;
+    background-color: gold;
+    height: 100%;
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+}
+.flex-item{
+    background-color:white;
+    border-radius: 10px;
+    box-shadow:3px 3px 0px goldenrod;
+    margin: 25px 20px;
+}
+.flex-text{
+    background-image: url(../images/top_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 10px;
+    height: 200px;
+    position: relative; 
+}
+.flex-t{
+    margin-left: 25px;
+    margin-top: 10px;
+    box-shadow: 1px 1px gold;
+    padding: 5px 0px;
+    color: gold;
+    border-radius: 15px;
+    text-align: center;
+    width: 80px;
+    font-size: 13px;
+    border: 1px solid  gold;
+}
+.flex-b{
+    text-align: center;
+    margin: 10px 0px;
+}
+.flex-b button{
+    color:gold ;
+    width: 220px;
+    margin: 9px 0px;
+    background-color: black;
+    border:1px solid gold;
+    border-radius: 5px;
+    box-shadow: 1px 1px gold;
+}
+.flex-bottom{
+    position: absolute;
+	bottom: 0px;
+	right: 0px;
+	margin:40px 30px;
+	font-size: 13px;
+}
+.flex-item2{
+    margin: 15px 0px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-text2{
+    float: left;
+    text-align: center;
+    font-size: 13px;
+    color: grey;
+}
+.flex-text2 span{
+    color: red;
+    font-size: 17px;
+}
+/* 激活样式 */
+.flex-jhm{
+    display: inline;
+    width: 40px;
+    height: 55px;
+    color:gold;
+    text-shadow:1px 0px 0px gold;
+    padding: 12px 5px;
+    margin-left: -25px;
+    margin-top: -11px;
+    font-size: 15px;
+    text-align: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(../images/qp.png);
+}
+.flex-item3{
+    background-color:white;
+    box-shadow:3px 3px 0px goldenrod;
+    border-radius: 10px;
+    margin: 10px 20px;
+}
+.item3-b{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 20px;
+    padding: 10px 0px;
+}
+.ite3-div{
+    text-align: center;
+    border-radius: 10px;
+    margin: 3px 4px;
+    width: 85px;
+    color: black;
+    background-color: gold;
+    border:1px solid gold;
+}
+.ite3-div span{
+    font-size: 10px;
+    color: darkmagenta;
+}
+
+.item3-p{
+    border-radius: 5px;
+    color: red;
+    font-size: 15px;
+    background-color: white;
+    margin: 10px 0px;
+    text-align: right;
+}
+.item3-b2{
+    text-align: right;
+    margin: 0px 10px;
+}
+
+.solid{
+    border-top: 1px solid grey;
+    margin: 0px 20px;
+}
+.item-text{
+    float: left;
+    margin: 10px 20px;
+}
+.item-text span{
+    font-size: 13px;
+    color: grey;
+}
+.item-text2{
+    margin: 10px 20px;
+    text-align: right;
+    font-size: 10px;
+    color: red;
+}
+.item-text2 button{
+    width: 100px;
+    color: white;
+    background-color: gold;
+    margin: 5px 0px;
+    border: gold;
+    border-radius: 3px;
+}
+.flex-item4{
+    background-color:white; 
+    box-shadow:3px 3px 0px goldenrod;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 25px;
+    margin-bottom: 110px;
+}
+.text{
+    display:flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center; 
+}
+/* 圆点 */
+.dot{
+    width: 10px;      
+    height: 10px;      
+    border-radius: 100px;
+    background-color: gold;
+    margin-top: 5px;
+    float: left;  
+    margin: 0px;
+}
+.czjl{
+    float: left; 
+    margin: 10px 20px;
+}
+.flex-item4 span{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    color: grey;
+    font-size: 14px;
+}
+
+/* 底部导航栏 */
+.footer{
+    background-color: #F8F8FF;
+    width: 95%;
+    position: absolute;
+    position:fixed;bottom:0px;left: 0px;right: 0px;
+}
+.bottom_gwc{
+    background-color: #ffffff;
+    border-radius:10px;
+    border:1px solid rgb(225, 228, 228);
+    position: absolute;
+    bottom: 0px;
+    margin: 0px 15px;
+    width: 98%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom_gwc img{
+    width: 30px;
+    height: 30px;
+}
+.bottom-home,.bottom-cz,.bottom-me{
+    
+    float: left;
+    text-align: center;
+    width: 120px;
+}
+.explain{
+    margin: 30px 20px;
+    text-align: center;
+}
+.explain-text{
+    text-align: left;
+}
+
+
+/* 添加油卡表单样式 */
+.form_ul{
+    margin: 30px 20px;
+    height: 50px;
+}
+.form_ul span{
+    color: red;
+}
+.form_sex{
+    margin: 0px 30px;
+}
+.form_text{
+    height: 30px;
+    width: 90%;
+    margin-top: 10px;
+    outline-style: none ;
+    margin-left: 10px;
+    border-radius: 2px;
+    border: 1px solid #eee;
+    background-color: #eee;
+}
+.from_submit{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+  color: gold;
+}
+.from_submit div{
+    border-radius: 5px;
+    padding: 5px 30px;
+    border: 1px solid gold; 
+    background-color: white;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 激活 样式 */
+.activate{
+    margin: 10px 20px;
+    text-align: center;
+}
+.activate input{
+    height: 40px;
+    border-left-width:0px;
+    border-top-width:0px;
+    border-right-width:0px; 
+    width: 100%;
+}
+.activate div{
+    margin: 30px 10px;
+    height:35px;
+    width: 90%;
+    padding-top: 10px;
+    color: white;
+    background-color: gold;
+    border-radius: 5px;
+    border:  1px solid gold;
+}
+.activate label{
+    margin-top: 10px;
+    float: right;
+    font-size: 13px;    
+}
+/* 券额 使用说明 */
+.userE{
+    margin: 10px 10px;
+    text-align: center;
+}
+.userE-b{
+    text-align: left;
+}
+.userE-b span{
+    font-size: 20px;
+}
+.userE-b label{
+    color:red;
+}
+
+/* （券）激活界面，提示信息 样式 */
+.el-message{
+    color: white;
+    text-align: center;
+    background-color: grey;
+    width: 35%;
+    margin: 0px 100px;
+    
+}
+.top_head{
+    margin-top: 20px;
+    margin-left: 60px;
+    text-align: center;
+}
+.top_head button{
+    float: right;
+    margin-right: 20px;
+    border-radius: 5px;
+    color:gold;
+    background-color: white;
+    border:1px solid white;
+}
+/* input:disabled{
+    background-color: ;d
+} */
+
+
+/* 底部 */
+.tab{
+    display: flex;
+    justify-content: space-around;
+    font-size: 13px;
+    background-color: #ffffff;
+    border:1px solid rgb(225, 228, 228);
+    position: absolute;
+    height: 65px;
+    width: 100%;
+    text-align: center;
+    position:fixed; 
+    bottom:0;
+}
+.tab img{
+    margin-top: 8px;
+    width: 25px;
+    height: 25px;
+}
+
+
+
+/* 话费充值界面 */
+.flex-text_hf{
+    background-image: url(../images/swt.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 10px;
+    height: 170px;
+	position: relative; 
+}
+.flex-item_hf{
+    background-color:white;
+    box-shadow:3px 3px 0px goldenrod;
+    border-radius: 10px;
+    margin: 25px 20px;
+}
+
+.flex-bottom_cz{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	margin:33px 30px;
+	font-size: 13px;
+}
+.flex-item3_hf{
+    background-color:white;   
+    box-shadow:3px 3px 0px goldenrod;
+    border-radius: 10px;
+    margin: 10px 20px;
+}
+.flex_input{
+    margin: 10px 20px;
+    height: 30px;
+    width: 86%;
+    border-radius: 8px;
+    border-left-width:0px;
+    border-top-width:0px;
+    border-right-width:0px; 
+}
+
+.item3-b_hf{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 20px;
+}
+.ite3-div_hf{
+    text-align: center;
+    border-radius: 10px;
+    margin: 3px 4px;
+    width: 85px;
+    color: black;
+    background-color: gold;
+    border:1px solid gold;
+}
+.ite3-div_hf span{
+    font-size: 10px;
+    color: darkmagenta;
+}
+
+
+/* 个人中心样式 */
+.me_body{
+    background-color:#fff;
+}
+.me_top{
+    width: 100%;
+    height: 220px;
+    background-image: url(../images/grzx_topbg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* 订单 */
+.me-list{
+    width: 100%;
+    position: absolute;
+}
+.me_order{
+    padding: 5px 5px;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0px;
+}
+.me_order img{
+    margin: 0px 10px;
+    width: 20px;
+    height: 20px;
+}
+.me_order span{
+    position: absolute;
+}
+.me_order label{
+    font-size: 13px;
+    color: rgb(133, 128, 128);
+    float: right;
+}
+
+
+/* 油卡充值记录 */
+#cord{
+    margin: 5px 20px;
+    text-align: center;
+}
+/* 话费充值记录 */
+#cord_recharge{
+    margin: 5px 20px;
+    text-align: center;
+}
+
+/* 个人中心->意见反馈样式 */
+.feedback{
+    margin: 20px 20px;
+    font-size: 15px;
+    font-weight: 15px;
+}
+.feedback span{
+    color: red;
+}
+.feedback-bt{
+    margin: 10px 0px;
+}
+
+
+/* 个人中心->代理中心样式 */
+.van-nav-bar .van-icon{
+    color: #000;
+}
+.van-nav-bar__text{
+    color: #000;
+}
+.agency{
+    background-color:#eee;
+}
+.agency_name{
+    background-color:#fff;
+    font-size:1.2rem;
+    margin-top: 1.5rem;
+    padding-bottom: 20px;
+    border-bottom:1px solid gainsboro;
+}
+.agency_value{
+    background-color:#fff;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+.agency_num{
+    text-align: center;
+    height: 50px;
+    float: left;
+}
+.agency_num span{
+    color:red;
+}
+.agency_tab{
+    background-color: #fff;
+}
+.tab-head{
+    display: flex;
+    justify-content: space-around;
+}
+.tab-head span {
+    font-size: 18px;
+    float: left;
+    padding: 20px 0px;
+    text-align: center;
+}
+.tab-content {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+}
+.show span{
+    color: #aaa;
+}
+.tab-content div{
+    display: none;
+}
+.show dl{
+    padding: 20px 0px;
+    padding-left: 20px;
+    border-bottom: 1px solid #eee;
+}
+.selected {
+    padding: 20px 0px;
+    color:red;
+    border-bottom: 1px solid red;
+}
+.tab-content .show{
+    display: block;
+}

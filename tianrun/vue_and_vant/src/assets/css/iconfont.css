@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'dl-icon';
+  src: url('iconfont.ttf?t=1567389590840') format('truetype')/* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+}
+
+.dl-icon {
+  font-family: 'dl-icon';
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dl-icon-setting:before {
+  content: "\e631";
+}
+
+.dl-icon-wodedaiban:before {
+  content: "\e7d6";
+}
+
+.dl-icon-mima:before {
+  content: "\e67e";
+}
+
+.dl-icon-wodejifen:before {
+  content: "\e65f";
+}
+
+.dl-icon-wodexiaoxi:before {
+  content: "\e660";
+}
+
